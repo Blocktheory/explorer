@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Container, Stack, Typography, useTheme} from "@mui/material";
+import {Box, Container, Typography, useTheme} from "@mui/material";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
@@ -83,7 +83,7 @@ export default function Footer() {
                   Nexio
                 </Box>
               </Typography>
-              <Stack
+              {/* <Stack
                 direction="row"
                 spacing={1}
                 justifyContent={{xs: "center", md: "start"}}
@@ -110,7 +110,7 @@ export default function Footer() {
                 >
                   Terms
                 </Link>
-              </Stack>
+              </Stack> */}
             </Grid>
           </Grid>
 
