@@ -74,7 +74,7 @@ const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
   //
 
   typography: {
-    fontFamily: `"DM Mono",lft-etica-mono,ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace`,
+    fontFamily: `Departure Mono, "DM Mono",lft-etica-mono,ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace`,
     fontWeightLight: 200,
     fontWeightRegular: 400,
     fontWeightBold: 500,

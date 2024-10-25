@@ -76,8 +76,7 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --config .prettierrc.json -w",
-      "eslint --fix"
+      "prettier --config .prettierrc.json -w"
     ]
   },
   "browserslist": {
