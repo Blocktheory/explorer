@@ -26,7 +26,7 @@ export const primary = {
   800: "#cc4400",
   900: "#bb3300",
 };
-
+//comment
 export const aptosColor = primary[600];
 export const negativeColor: string = "#F97373";
 export const warningColor: string = "#f1c232";
