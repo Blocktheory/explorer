@@ -1,9 +1,9 @@
 import React, {createContext} from "react";
 import Grid from "@mui/material/Grid";
 import TotalSupply from "./TotalSupply";
-import TotalStake from "./TotalStake";
+// import TotalStake from "./TotalStake";
 import TPS from "./TPS";
-import ActiveValidators from "./ActiveValidators";
+// import ActiveValidators from "./ActiveValidators";
 import TotalTransactions from "./TotalTransactions";
 import {useGetInMainnet} from "../../../api/hooks/useGetInMainnet";
 import {Link} from "../../../routing";
@@ -55,21 +55,21 @@ export default function NetworkInfo({isOnHomePage}: NetworkInfoProps) {
             <TotalSupply />
           </LinkableContainer>
         </Grid>
-        <Grid item xs={12} md={6} lg={3}>
+        {/* <Grid item xs={12} md={6} lg={3}>
           <LinkableContainer linkToAnalyticsPage={onHomePage}>
             <TotalStake />
           </LinkableContainer>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={6} lg={3}>
           <LinkableContainer linkToAnalyticsPage={onHomePage}>
             <TPS />
           </LinkableContainer>
         </Grid>
-        <Grid item xs={12} md={6} lg={3}>
+        {/* <Grid item xs={12} md={6} lg={3}>
           <LinkableContainer linkToAnalyticsPage={onHomePage}>
             <ActiveValidators />
           </LinkableContainer>
-        </Grid>
+        </Grid> */}
       </Grid>
     </StyleContext.Provider>
   );

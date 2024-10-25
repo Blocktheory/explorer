@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import Toolbar from "@mui/material/Toolbar";
 import MuiAppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
-import NetworkSelect from "./NetworkSelect";
+// import NetworkSelect from "./NetworkSelect";
 import {useColorMode} from "../../context";
 import {useMediaQuery, useTheme} from "@mui/material";
 // import LogoIcon from "../../assets/svg/aptos_logo_icon.svg?react";
@@ -131,7 +131,7 @@ export default function Header() {
             </Link>
 
             <Nav />
-            <NetworkSelect />
+            {/* <NetworkSelect /> */}
             <Button
               onClick={toggleColorMode}
               sx={{
