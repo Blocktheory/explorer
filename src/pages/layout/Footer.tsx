@@ -3,31 +3,33 @@ import {Box, Container, Stack, Typography, useTheme} from "@mui/material";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
-import GithubLogo from "../../assets/github.svg?react";
+// import GithubLogo from "../../assets/github.svg?react";
 import DiscordLogo from "../../assets/discord.svg?react";
 import TwitterLogo from "../../assets/twitter.svg?react";
-import MediumLogo from "../../assets/medium.svg?react";
-import LinkedInLogo from "../../assets/linkedin.svg?react";
+import TelegramLogo from "../../assets/telegram.svg?react";
+// import MediumLogo from "../../assets/medium.svg?react";
+// import LinkedInLogo from "../../assets/linkedin.svg?react";
 import {grey} from "../../themes/colors/aptosColorPalette";
 import SvgIcon from "@mui/material/SvgIcon";
 
-import LogoFull from "../../assets/svg/aptos_logo_labs.svg?react";
+// import LogoFull from "../../assets/svg/aptos_logo_labs.svg?react";
 import {Link} from "../../routing";
 
 const socialLinks = [
-  {title: "Git", url: "https://github.com/aptos-labs", icon: GithubLogo},
+  // {title: "Git", url: "https://github.com/aptos-labs", icon: GithubLogo},
   {
     title: "Discord",
-    url: "https://discord.com/invite/aptosnetwork",
+    url: "https://discord.com/invite/nexio",
     icon: DiscordLogo,
   },
-  {title: "Twitter", url: "https://twitter.com/aptoslabs/", icon: TwitterLogo},
-  {title: "Medium", url: "https://aptoslabs.medium.com/", icon: MediumLogo},
-  {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/company/aptoslabs/",
-    icon: LinkedInLogo,
-  },
+  {title: "Twitter", url: "https://x.com/buildnexio", icon: TwitterLogo},
+  {title: "Telegram", url: "https://t.me/buildnexio", icon: TelegramLogo},
+  // {title: "Medium", url: "https://aptoslabs.medium.com/", icon: MediumLogo},
+  // {
+  //   title: "LinkedIn",
+  //   url: "https://www.linkedin.com/company/aptoslabs/",
+  //   icon: LinkedInLogo,
+  // },
 ];
 
 export default function Footer() {
@@ -56,7 +58,7 @@ export default function Footer() {
             alignItems={{xs: "center", md: "start"}}
             direction="column"
           >
-            <Link
+            {/* <Link
               color="inherit"
               to="https://aptoslabs.com/"
               target="_blank"
@@ -64,7 +66,7 @@ export default function Footer() {
               sx={{width: "8rem", mr: {md: 2}}}
             >
               <LogoFull />
-            </Link>
+            </Link> */}
             <Grid direction="row" padding="0">
               <Typography
                 sx={{
@@ -78,7 +80,7 @@ export default function Footer() {
               >
                 © {new Date().getFullYear()}{" "}
                 <Box component="span" sx={{whiteSpace: "nowrap"}}>
-                  Aptos Labs
+                  Nexio
                 </Box>
               </Typography>
               <Stack

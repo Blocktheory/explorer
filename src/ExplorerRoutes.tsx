@@ -12,8 +12,8 @@ const BlockPage = lazy(() => import("./pages/Block/Index"));
 const TokenPage = lazy(() => import("./pages/Token/Index"));
 const TransactionsPage = lazy(() => import("./pages/Transactions/Index"));
 const BlocksPage = lazy(() => import("./pages/Blocks/Index"));
-const ValidatorsPage = lazy(() => import("./pages/Validators/Index"));
-const ValidatorPage = lazy(() => import("./pages/DelegatoryValidator"));
+// const ValidatorsPage = lazy(() => import("./pages/Validators/Index"));
+// const ValidatorPage = lazy(() => import("./pages/DelegatoryValidator"));
 const AnalyticsPage = lazy(() => import("./pages/Analytics/Index"));
 
 export default function ExplorerRoutes() {
@@ -22,12 +22,12 @@ export default function ExplorerRoutes() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/transactions" element={<TransactionsPage />} />
-        <Route path="/validators" element={<ValidatorsPage />}>
+        {/* <Route path="/validators" element={<ValidatorsPage />}>
           <Route path=":tab" element={<ValidatorsPage />} />
-        </Route>
-        <Route path="/validator">
+        </Route> */}
+        {/* <Route path="/validator">
           <Route path=":address" element={<ValidatorPage />} />
-        </Route>
+        </Route> */}
         <Route path="/txn">
           <Route path=":txnHashOrVersion" element={<TransactionPage />} />
           <Route path=":txnHashOrVersion/:tab" element={<TransactionPage />} />

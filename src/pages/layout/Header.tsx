@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import NetworkSelect from "./NetworkSelect";
 import {useColorMode} from "../../context";
 import {useMediaQuery, useTheme} from "@mui/material";
-import LogoIcon from "../../assets/svg/aptos_logo_icon.svg?react";
+// import LogoIcon from "../../assets/svg/aptos_logo_icon.svg?react";
 import IconLight from "../../assets/svg/icon_light.svg?react";
 import IconDark from "../../assets/svg/icon_dark.svg?react";
 import Button from "@mui/material/Button";
@@ -121,7 +121,13 @@ export default function Header() {
                 marginRight: "auto",
               }}
             >
-              <LogoIcon />
+              {/* <LogoIcon /> */}
+              <img
+                src="src/assets/nexio_logo.jpg"
+                width={40}
+                height={40}
+                style={{borderRadius: "9999px"}}
+              />
             </Link>
 
             <Nav />

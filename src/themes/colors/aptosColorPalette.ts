@@ -15,16 +15,16 @@ export const grey = {
 
 // Primary Palette
 export const primary = {
-  50: "#edfffe",
-  100: "#c2ffff",
-  200: "#84feff",
-  300: "#3ffdff",
-  400: "#06f7f7",
-  500: "#00dadc",
-  600: "#00adb2",
-  700: "#00878d",
-  800: "#00686f",
-  900: "#06565b",
+  50: "#fff0cc",
+  100: "#ffe6b3",
+  200: "#ffc080",
+  300: "#ffa07a",
+  400: "#ffad6e",
+  500: "#ff8c42",
+  600: "#ff6c00",
+  700: "#dd5500",
+  800: "#cc4400",
+  900: "#bb3300",
 };
 
 export const aptosColor = primary[600];
