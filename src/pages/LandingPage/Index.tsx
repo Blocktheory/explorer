@@ -8,7 +8,7 @@ export default function LandingPage() {
   return (
     <Box>
       <Typography variant="h3" component="h3" marginBottom={4}>
-        Nexio Explorer
+        Devnet Explorer
       </Typography>
       <NetworkInfo isOnHomePage />
       <HeaderSearch />

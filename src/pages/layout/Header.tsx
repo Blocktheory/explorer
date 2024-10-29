@@ -123,10 +123,10 @@ export default function Header() {
             >
               {/* <LogoIcon /> */}
               <img
-                src="src/assets/nexio_logo.jpg"
-                width={40}
-                height={40}
-                style={{borderRadius: "9999px"}}
+                src="src/assets/nexio_logo_rec.jpg"
+                width={140}
+                // height={40}
+                style={{borderRadius: "4"}}
               />
             </Link>
 

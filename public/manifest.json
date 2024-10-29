@@ -1,6 +1,6 @@
 {
-  "short_name": "Nexio Explorer",
-  "name": "Nexio Block Explorer",
+  "short_name": "Nexio Devnet Explorer",
+  "name": "Nexio Devnet Explorer",
   "icons": [
     {
       "src": "favicon.ico",

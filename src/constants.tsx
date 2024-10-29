@@ -1,15 +1,13 @@
 /**
  * Network
  */
-export const devnetUrl =
-  import.meta.env.APTOS_DEVNET_URL ||
-  "https://api.devnet.staging.aptoslabs.com/v1";
+export const devnetUrl = "http://192.81.214.203:8080/v1";
 
 export const networks: Record<string, string> = {
   mainnet: "https://api.mainnet.aptoslabs.com/v1",
   testnet: "https://api.testnet.staging.aptoslabs.com/v1",
   devnet: devnetUrl,
-  local: "http://127.0.0.1:8080/v1",
+  local: "http://192.81.214.203:8080/v1",
 };
 
 export type NetworkName = keyof typeof networks;
@@ -59,7 +57,7 @@ for (const key of Object.keys(networks)) {
   }
 }
 
-export const defaultNetworkName: NetworkName = "mainnet" as const;
+export const defaultNetworkName: NetworkName = "local" as const;
 
 if (!(defaultNetworkName in networks)) {
   throw `defaultNetworkName '${defaultNetworkName}' not in Networks!`;
