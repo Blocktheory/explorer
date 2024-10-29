@@ -15,13 +15,14 @@ import NavMobile from "./NavMobile";
 import {grey} from "../../themes/colors/aptosColorPalette";
 import {useInView} from "react-intersection-observer";
 import FeatureBar from "./FeatureBar";
-import {WalletConnector} from "@aptos-labs/wallet-adapter-mui-design";
+// import {WalletConnector} from "@aptos-labs/wallet-adapter-mui-design";
 import {useGlobalState} from "../../global-config/GlobalConfig";
 import {useWallet} from "@aptos-labs/wallet-adapter-react";
 import {sendToGTM} from "../../api/hooks/useGoogleTagManager";
 import {Link, useNavigate} from "../../routing";
 import {useLogEventWithBasic} from "../Account/hooks/useLogEventWithBasic";
 import {sortPetraFirst} from "../../utils";
+import {WalletConnector} from "../../components/WalletConnector";
 
 export default function Header() {
   const scrollTop = () => {
@@ -157,8 +158,8 @@ export default function Header() {
                   handleNavigate={() =>
                     navigate(`/account/${account?.address}`)
                   }
-                  sortAvailableWallets={sortPetraFirst}
-                  sortInstallableWallets={sortPetraFirst}
+                  sortDefaultWallets={sortPetraFirst}
+                  sortMoreWallets={sortPetraFirst}
                   modalMaxWidth="sm"
                 />
               </Box>

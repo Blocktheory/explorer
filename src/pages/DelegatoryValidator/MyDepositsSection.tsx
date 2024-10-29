@@ -179,7 +179,7 @@ function ActionsCell({
   const requirement = getStakeOperationAPTRequirement(
     stakes,
     getStakeOperationFromStakingStatus(status, canWithdrawPendingInactive),
-    Number(balance?.data ?? 0),
+    Number(balance),
   );
 
   const buttonDisabled =
