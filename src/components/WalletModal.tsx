@@ -29,6 +29,7 @@ import {WalletConnectorProps} from "@aptos-labs/wallet-adapter-mui-design";
 interface WalletsModalProps
   extends Pick<
     WalletConnectorProps,
+    //@ts-ignore
     "networkSupport" | "sortDefaultWallets" | "sortMoreWallets"
   > {
   handleClose: () => void;
