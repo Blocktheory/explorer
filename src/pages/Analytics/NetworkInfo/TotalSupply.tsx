@@ -15,8 +15,8 @@ export default function TotalSupply() {
       //     : "-"
       // }
       data={"21,000,000"}
-      label="BTC Supply"
-      tooltip="Amount of APT tokens flowing through the Aptos network."
+      label="nxBTC Supply"
+      tooltip="Amount of nxBTC tokens flowing through the Aptos network."
     />
   );
 }

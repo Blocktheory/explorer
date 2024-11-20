@@ -37,9 +37,9 @@ export function isBannedType(level: VerifiedType): boolean {
 }
 
 const nativeTokens: Record<string, string> = {
-  "0x1::aptos_coin::AptosCoin": "APT",
-  "0xa": "APT",
-  "0xA": "APT",
+  "0x1::aptos_coin::AptosCoin": "nxBTC",
+  "0xa": "nxBTC",
+  "0xA": "nxBTC",
 };
 const labsVerifiedTokens: Record<string, string> = {
   "0xd39fcd33aedfd436a1bbb576a48d5c7c0ac317c9a9bb7d53ae9ffb41e8cb9fd9":

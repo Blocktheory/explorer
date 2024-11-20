@@ -288,7 +288,7 @@ function StakeOperationDialogContent({
           <ContentBoxSpaceBetween>
             <ContentRowSpaceBetween
               title={"Staking Fee"}
-              value={Number(addStakeFee) / OCTA + " APT"}
+              value={Number(addStakeFee) / OCTA + " nxBTC"}
               tooltip={
                 <StyledLearnMoreTooltip
                   text={

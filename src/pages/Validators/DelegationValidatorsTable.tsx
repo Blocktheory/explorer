@@ -352,7 +352,7 @@ function MyDepositCell({validator}: ValidatorCellProps) {
           <CheckCircleIcon sx={{color: aptosColor}} fontSize="small" />
           <CurrencyValue
             amount={Number(totalDeposit).toString()}
-            currencyCode="APT"
+            currencyCode="nxBTC"
             fixedDecimalPlaces={0}
           />
         </Stack>
