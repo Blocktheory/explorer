@@ -7,7 +7,7 @@ export const networks: Record<string, string> = {
   mainnet: "https://api.mainnet.aptoslabs.com/v1",
   testnet: "https://api.testnet.staging.aptoslabs.com/v1",
   devnet: devnetUrl,
-  local: "http://192.81.214.203:8080/v1",
+  local: "https://rpc.nexio.codecrane.com/v1",
 };
 
 export type NetworkName = keyof typeof networks;
